@@ -1,0 +1,21 @@
+cover:
+  - platform: mqtt
+    name: Smarkant
+    command_topic: "smarkant/move"
+    payload_open: '{"height":"4150"}'
+    payload_close: '{"height":"820"}'
+    payload_stop: 'stop'
+    state_opening: "standing"
+    state_closing: "sitting"
+    state_stopped: "stop"
+    optimistic: true
+
+sensor: 
+  - platform: mqtt
+    name: smarkant_height
+    state_topic: "smarkant/height"
+  
+  - platform: mqtt
+    name: smarkant_height_cm
+    state_topic: "smarkant/heightcm"
+    unit_of_measurement: cm

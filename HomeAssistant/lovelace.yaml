@@ -1,0 +1,12 @@
+type: vertical-stack
+title: Smarkant
+cards:
+  - type: entities
+    entities:
+      - entity: cover.smarkant
+        icon: mdi:desk
+        name: Steuerung
+      - entity: sensor.smarkant_height_cm
+        name: Tischhöhe
+        icon: mdi:ruler
+    state_color: false
